@@ -15,6 +15,9 @@ interface HealthDataDao {
     @Query("SELECT * FROM health_data ORDER BY timestamp ASC LIMIT 1")
     suspend fun getNext(): HealthData?
 
+    @Query("SELECT * FROM health_data WHERE idMotorista = :idMotorista ORDER BY timestamp ASC LIMIT 1")
+    suspend fun getNextByMotorista(idMotorista: String): HealthData?
+
     @Delete
     suspend fun delete(data: HealthData)
 }

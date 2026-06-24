@@ -20,8 +20,8 @@ enum class Resultados {
 class Sender : WebSocketListener() {
     private companion object {
         const val TAG = "SaudeNaBR_Sender"
-        //const val WS_URL = "wss://saudenabr.algol.dev/savetelemetry"
-        const val WS_URL = "ws://10.0.2.2:3003/savetelemetry"
+        const val WS_URL = "wss://saudenabr.algol.dev/savetelemetry"
+        //const val WS_URL = "ws://10.0.2.2:3003/savetelemetry"
         const val API_KEY = "#htxrlLaWaU3F8aNnjviFhreqyWzI1YowyZ8bFoCBNjhp8umKToLxTF4kau0tnp@"
     }
 
